@@ -5,6 +5,11 @@
 
 
 
+int minmax(matrix mat , num_nodes){
+
+
+
+}
 int mode(int *arr,int num_elements){
 int i,j ;
 int count,max_count,max_index;
