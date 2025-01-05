@@ -11,7 +11,7 @@ matrix *start_matrix(int n_row, int n_col){
 }
 
 int *matrix_cell (matrix *mat ,int column ,int row  ){
-    assert(column < mat->columns && row < mat->rows);
+   
     return &mat->data[row*mat->columns + column];
 }
 /*matrix *matrix_multiply(matrix *mat1, matrix *mat2){
