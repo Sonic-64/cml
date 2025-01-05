@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 project(CML VERSION 1.0)
 
-include_directories(include)
+include_directories(${CMAKE_SOURCE_DIR}/include)
 
 file(GLOB SOURCES "src/*.c")
 
