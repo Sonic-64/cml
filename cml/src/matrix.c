@@ -9,7 +9,10 @@ matrix *start_matrix(int n_row, int n_col){
     mat->data=calloc(n_row*n_col,sizeof(int)); 
     return mat; 
 }
-
+void matrix_free(matrix *mat){
+    free(mat->data);
+    free(mat);
+}
 int *matrix_cell (matrix *mat ,int column ,int row  ){
    
     return &mat->data[row*mat->columns + column];

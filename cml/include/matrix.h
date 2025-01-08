@@ -7,6 +7,7 @@ typedef struct matrix {
 }matrix;
 
 matrix *startmatrix(int n_row, int n_col);
+void matrix_free(matrix *mat);
 int *matrix_cell (matrix *mat ,int column ,int row  );
 #define MATRIX_H
 #endif
