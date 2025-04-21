@@ -53,6 +53,10 @@ double sigmoid(double x){
 
     return (1/(1+exp(-x)));
 }
+double ReLU(double x){
+    if(x>0)return x;
+    else return 0;
+}
 double derivative ( double(*f)(double*,int),double *x,int respect_to,int num_arguments){
 double delta = 1.0e-14;
 double original_value = x[respect_to];
